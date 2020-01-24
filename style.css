@@ -1,19 +1,22 @@
 html, body {
 	font-family: Arial, Helvetica, sans-serif;
-	height: 100%;
 	margin: 0;
+	padding: 0;
 }
 
 body {
 	display: grid;
 	height: max-content;
-	grid-template-rows: 2% 80% 2%;
-	grid-template-areas: "header" "main" "footer";
+	grid-template-rows: 1% 98% 1%;
+	grid-template-areas: 
+	"header"
+	 "main" 
+	 "footer";
 }
 
 header {
 	grid-area: header;
-	background-color: green;
+	background-color: #D2C2B0;
 	display: flex;
 }
 
@@ -30,12 +33,16 @@ nav {
 	width: 80%;
 	margin: auto;
 }
+a{
+	font-size: 12px;
+}
 
 .menu {
 	width: 80%;
 	display: flex;
 	list-style: none;
 }
+
 
 .menu li {
 	margin: 1%;
@@ -45,7 +52,13 @@ nav {
 	text-decoration: none;
 	color: white;
 }
-
+ h2,h3,h4{
+	 margin-left: 15px;
+ }
+ p{
+	 margin-left: 15px;
+	 margin-right: 15px;
+ }
 main {
 	display: grid;
 	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -58,22 +71,29 @@ main {
 	grid-template-columns: 1fr 1fr 1fr;
 	list-style: none;
 	text-align: center;
+	margin: 0 10px;
+	padding: 0;
 }
 
+
+
 .cases-de-sucesso img {
-	height: 250px;
+	height: 200px;
 }
 
 .nossos-servicos img {
 	height: 100px;
 }
-
+.nosso-time ul{
+	display: grid;
+}
 .onde-estamos {
 	text-align: center;
 }
 
 .onde-estamos img {
 	width: 60%;
+	margin-top: 10%;
 }
 
 .nosso-time img {
@@ -87,7 +107,8 @@ main {
 .contato form {
 	width: 50%;
 	margin: auto;
-	text-align: center;
+	margin-top: 10%;
+	text-align: justify;
 }
 
 .contato input, .contato textarea, .contato select, .contato label {
@@ -101,13 +122,12 @@ main {
 
 footer {
 	grid-area: footer;
-	padding: 10%;
+	background-color: #D2C2B0;
 	text-align: center;
 	margin-bottom: 0;
 }
 
 .apresentacao {
-	padding: 10%;
 	background-color: #E9F1F7;
 }
 
@@ -116,35 +136,30 @@ h2 {
 }
 
 .nossos-servicos {
-	padding: 10%;
 	background-color: #a0a0a0;
 }
 
 .cases-de-sucesso {
-	padding: 10%;
 	background-color: #a0a0a0;
 }
 
 .nosso-time {
-	padding: 10%;
 	background-color: #E9F1F7;
 }
 
 .perguntas-frequentes {
-	padding: 10%;
 	background-color: #a0a0a0;
 }
 
 .onde-estamos {
-	padding: 10%;
 	background-color: #E9F1F7;
 }
 
 .contato {
-	padding: 10%;
 	background-color: #a0a0a0;
 }
 
 footer img {
+	margin-top: 15px;
 	width: 50px;
 }
