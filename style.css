@@ -1,0 +1,51 @@
+html, body{
+	height: 100%;
+	margin:0;
+
+}
+
+body { 
+	display:grid;
+	grid-template-rows: 10% 80% 10%;
+    grid-template-areas: 
+	"header"
+	"main"
+    "footer";
+}
+
+header{
+	grid-area: header;
+    background-color: green;
+}
+
+.logo{ 
+	height: 100%;
+
+}
+
+.menu{
+	display: flex;
+	flex-wrap: nowrap;
+
+
+}
+
+img{
+
+}
+
+main{
+	grid-area: main;
+	apresentacao 
+	nossos-servicos
+	cases-de-sucesso
+    nosso-time
+    perguntas-frequentes
+    onde-estamos
+    contato
+}
+
+footer{
+	grid-area: footer;
+}
+
