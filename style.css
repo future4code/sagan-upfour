@@ -1,100 +1,150 @@
-html, body{
+html, body {
+	font-family: Arial, Helvetica, sans-serif;
 	height: 100%;
-	margin:0;
-
+	margin: 0;
 }
 
-body { 
-	display:grid;
-	grid-template-rows: 10% 80% 10%;
-    grid-template-areas: 
-	"header"
-	"main"
-    "footer";
+body {
+	display: grid;
+	height: max-content;
+	grid-template-rows: 2% 80% 2%;
+	grid-template-areas: "header" "main" "footer";
 }
 
-header{
+header {
 	grid-area: header;
 	background-color: green;
 	display: flex;
-
 }
 
-.logo{ 
+.logo {
 	height: 100%;
 	width: 15%;
+}
 
+.img-apresentacao {
+	width: 100%;
 }
-.img-apresentacao{
-	height: 15%;
-	display: block;
-}
-nav{
+
+nav {
 	width: 80%;
+	margin: auto;
 }
-.menu{
+
+.menu {
 	width: 80%;
 	display: flex;
 	list-style: none;
 }
-.menu li{
+
+.menu li {
 	margin: 1%;
 }
-.menu a{
+
+.menu a {
 	text-decoration: none;
 	color: white;
 }
 
-img{
-
-}
-
-main{
-	display:grid;
-	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+main {
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 	grid-area: main;
-	grid-template-areas: 
-	"apresentacao" 
-	"nossos-servicos"
-	"cases-de-sucesso"
-    "nosso-time"
-    "perguntas-frequentes"
-    "onde-estamos"
-    "contato";
-}
-.cases-de-sucesso img{
-	height: 50px;
-}
-.nossos-servicos img{
-	height: 50px;
+	grid-template-areas: "apresentacao" "nossos-servicos" "cases-de-sucesso" "nosso-time" "perguntas-frequentes" "onde-estamos" "contato";
 }
 
-footer{
+.nossos-servicos ul, .cases-de-sucesso ul, .nosso-time ul {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	list-style: none;
+	text-align: center;
+}
+
+.cases-de-sucesso img {
+	height: 250px;
+}
+
+.nossos-servicos img {
+	height: 100px;
+}
+
+.onde-estamos {
+	text-align: center;
+}
+
+.onde-estamos img {
+	width: 60%;
+}
+
+.nosso-time img {
+	width: 250px;
+	height: 250px;
+	display: block;
+	background: #E6E7ED;
+	border-radius: 100%;
+}
+
+.contato form {
+	width: 50%;
+	margin: auto;
+	text-align: center;
+}
+
+.contato input, .contato textarea, .contato select, .contato label {
+	display: block;
+	margin: auto;
+}
+
+.contato input {
+	width: 50%;
+}
+
+footer {
 	grid-area: footer;
-}
-
-.apresentacao{
-	background-color: #E9F1F7;
-}
-.nossos-servicos{
-	background-color: #a0a0a0;
-}
-.cases-de-sucesso{
-	background-color: #a0a0a0;
-}
-.nosso-time{
-	background-color: #E9F1F7;
-}
-.perguntas-frequentes{
-	background-color: #a0a0a0;
-}
-.onde-estamos{
-	background-color: #E9F1F7;
-}
-.contato{
-	background-color: #a0a0a0;
-}
-
-footer{
+	padding: 10%;
+	text-align: center;
 	margin-bottom: 0;
+}
+
+.apresentacao {
+	padding: 10%;
+	background-color: #E9F1F7;
+}
+
+h2 {
+	font-size: 3em;
+}
+
+.nossos-servicos {
+	padding: 10%;
+	background-color: #a0a0a0;
+}
+
+.cases-de-sucesso {
+	padding: 10%;
+	background-color: #a0a0a0;
+}
+
+.nosso-time {
+	padding: 10%;
+	background-color: #E9F1F7;
+}
+
+.perguntas-frequentes {
+	padding: 10%;
+	background-color: #a0a0a0;
+}
+
+.onde-estamos {
+	padding: 10%;
+	background-color: #E9F1F7;
+}
+
+.contato {
+	padding: 10%;
+	background-color: #a0a0a0;
+}
+
+footer img {
+	width: 50px;
 }
