@@ -7,7 +7,7 @@ html, body {
 body {
 	display: grid;
 	height: max-content;
-	grid-template-rows: 1% 98% 1%;
+	grid-template-rows: 1% 97% 2%;
 	grid-template-areas: 
 	"header"
 	 "main" 
@@ -31,8 +31,9 @@ header {
 
 nav {
 	width: 80%;
-	margin: auto;
+	
 }
+
 a{
 	font-size: 12px;
 }
@@ -41,6 +42,7 @@ a{
 	width: 80%;
 	display: flex;
 	list-style: none;
+	margin: 0;
 }
 
 
@@ -61,7 +63,7 @@ a{
  }
 main {
 	display: grid;
-	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.7fr;
 	grid-area: main;
 	grid-template-areas: "apresentacao" "nossos-servicos" "cases-de-sucesso" "nosso-time" "perguntas-frequentes" "onde-estamos" "contato";
 }
@@ -100,6 +102,7 @@ main {
 	width: 250px;
 	height: 250px;
 	display: block;
+	margin: auto;
 	background: #E6E7ED;
 	border-radius: 100%;
 }
@@ -120,11 +123,17 @@ main {
 	width: 50%;
 }
 
+.contato button {
+	display: block;
+	margin: 2% auto;
+	padding: 2%;
+}
+
 footer {
 	grid-area: footer;
-	background-color: #D2C2B0;
+	background-color: #1F1F24;
 	text-align: center;
-	margin-bottom: 0;
+	margin: 0;
 }
 
 .apresentacao {
@@ -140,26 +149,45 @@ h2 {
 }
 
 .cases-de-sucesso {
-	background-color: #a0a0a0;
+	background-color: #E9F1F7;
 }
 
 .nosso-time {
-	background-color: #E9F1F7;
+	background-color: #a0a0a0;
 }
 
 .perguntas-frequentes {
-	background-color: #a0a0a0;
-}
-
-.onde-estamos {
 	background-color: #E9F1F7;
 }
 
-.contato {
+.onde-estamos {
 	background-color: #a0a0a0;
+}
+
+.contato {
+	background-color: #E9F1F7;
 }
 
 footer img {
 	margin-top: 15px;
 	width: 50px;
+}
+
+@media screen and (max-width: 375px) {
+
+	.menu li {
+		margin: 0 auto;
+	}
+
+	.menu a{
+		font-size: 12px;
+	}
+
+	h4 {
+		font-size: 24px;
+	}
+
+	p {
+		font-size: 22px;
+	}
 }
