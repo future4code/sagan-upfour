@@ -15,19 +15,34 @@ body {
 
 header{
 	grid-area: header;
-    background-color: green;
+	background-color: green;
+	display: flex;
+
 }
 
 .logo{ 
 	height: 100%;
+	width: 15%;
 
 }
-
+.img-apresentacao{
+	height: 15%;
+	display: block;
+}
+nav{
+	width: 80%;
+}
 .menu{
+	width: 80%;
 	display: flex;
-	flex-wrap: nowrap;
-
-
+	list-style: none;
+}
+.menu li{
+	margin: 1%;
+}
+.menu a{
+	text-decoration: none;
+	color: white;
 }
 
 img{
@@ -35,17 +50,51 @@ img{
 }
 
 main{
+	display:grid;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
 	grid-area: main;
-	apresentacao 
-	nossos-servicos
-	cases-de-sucesso
-    nosso-time
-    perguntas-frequentes
-    onde-estamos
-    contato
+	grid-template-areas: 
+	"apresentacao" 
+	"nossos-servicos"
+	"cases-de-sucesso"
+    "nosso-time"
+    "perguntas-frequentes"
+    "onde-estamos"
+    "contato";
+}
+.cases-de-sucesso img{
+	height: 50px;
+}
+.nossos-servicos img{
+	height: 50px;
 }
 
 footer{
 	grid-area: footer;
 }
 
+.apresentacao{
+	background-color: #E9F1F7;
+}
+.nossos-servicos{
+	background-color: #a0a0a0;
+}
+.cases-de-sucesso{
+	background-color: #a0a0a0;
+}
+.nosso-time{
+	background-color: #E9F1F7;
+}
+.perguntas-frequentes{
+	background-color: #a0a0a0;
+}
+.onde-estamos{
+	background-color: #E9F1F7;
+}
+.contato{
+	background-color: #a0a0a0;
+}
+
+footer{
+	margin-bottom: 0;
+}
