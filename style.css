@@ -1,0 +1,193 @@
+html, body {
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: grid;
+	height: max-content;
+	grid-template-rows: 1% 97% 2%;
+	grid-template-areas: 
+	"header"
+	 "main" 
+	 "footer";
+}
+
+header {
+	grid-area: header;
+	background-color: #D2C2B0;
+	display: flex;
+}
+
+.logo {
+	height: 100%;
+	width: 15%;
+}
+
+.img-apresentacao {
+	width: 100%;
+}
+
+nav {
+	width: 80%;
+	
+}
+
+a{
+	font-size: 12px;
+}
+
+.menu {
+	width: 80%;
+	display: flex;
+	list-style: none;
+	margin: 0;
+}
+
+
+.menu li {
+	margin: 1%;
+}
+
+.menu a {
+	text-decoration: none;
+	color: white;
+}
+ h2,h3,h4{
+	 margin-left: 15px;
+ }
+ p{
+	 margin-left: 15px;
+	 margin-right: 15px;
+ }
+main {
+	display: grid;
+	grid-template-rows: 1fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.7fr;
+	grid-area: main;
+	grid-template-areas: "apresentacao" "nossos-servicos" "cases-de-sucesso" "nosso-time" "perguntas-frequentes" "onde-estamos" "contato";
+}
+
+.nossos-servicos ul, .cases-de-sucesso ul, .nosso-time ul {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	list-style: none;
+	text-align: center;
+	margin: 0 10px;
+	padding: 0;
+}
+
+
+
+.cases-de-sucesso img {
+	height: 200px;
+}
+
+.nossos-servicos img {
+	height: 100px;
+}
+.nosso-time ul{
+	display: grid;
+}
+.onde-estamos {
+	text-align: center;
+}
+
+.onde-estamos img {
+	width: 60%;
+	margin-top: 10%;
+}
+
+.nosso-time img {
+	width: 250px;
+	height: 250px;
+	display: block;
+	margin: auto;
+	background: #E6E7ED;
+	border-radius: 100%;
+}
+
+.contato form {
+	width: 50%;
+	margin: auto;
+	margin-top: 10%;
+	text-align: justify;
+}
+
+.contato input, .contato textarea, .contato select, .contato label {
+	display: block;
+	margin: auto;
+}
+
+.contato input {
+	width: 50%;
+}
+
+.contato button {
+	display: block;
+	margin: 2% auto;
+	padding: 2%;
+}
+
+footer {
+	grid-area: footer;
+	background-color: #1F1F24;
+	text-align: center;
+	margin: 0;
+}
+
+.apresentacao {
+	background-color: #E9F1F7;
+}
+
+h2 {
+	font-size: 3em;
+}
+
+.nossos-servicos {
+	background-color: #a0a0a0;
+}
+
+.cases-de-sucesso {
+	background-color: #E9F1F7;
+}
+
+.nosso-time {
+	background-color: #a0a0a0;
+}
+
+.perguntas-frequentes {
+	background-color: #E9F1F7;
+}
+
+.onde-estamos {
+	background-color: #a0a0a0;
+}
+
+.contato {
+	background-color: #E9F1F7;
+}
+
+footer img {
+	margin-top: 15px;
+	width: 50px;
+}
+
+@media screen and (max-width: 375px) {
+
+	.menu li {
+		margin: 0 auto;
+	}
+
+	.menu a{
+		font-size: 12px;
+	}
+
+	h4 {
+		font-size: 24px;
+	}
+
+	p {
+		font-size: 22px;
+	}
+}
